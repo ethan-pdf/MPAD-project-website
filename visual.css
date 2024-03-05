@@ -1,20 +1,49 @@
 body {
+
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: #333;
-    background-color: #342f2f;
+    background-color: #bdbdbd;
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    width:100%;
 }
+
+header {
+    
+    display:flex;
+    align-items:center;
+    color:white;
+    font-size:2rem;
+    
+  }
 
 button.menu {
     display: flex;
     justify-content: start;
-    padding: 8px;
+    padding: 15px;
     margin: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 3rem;
+    border: none;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    margin: 20px; 
+}
+
+button.menu:hover {
+    background-color: #161616;
+    color: white;
+    transition-duration: .5s;
 }
 
 .player {
@@ -23,10 +52,57 @@ button.menu {
     justify-content: center;
     background-color: #383838;
     padding: 20px;
-    margin: auto;
-    width: 80%;
-
     border-radius: 10px;
 
 
+}
+
+.submenuClass {
+
+    display:flex;
+    position: fixed; 
+    top: 0px; 
+    left: -165px; 
+    margin: 0px; 
+    background-color:azure;
+    height:100%;
+    transition: left 1s ease;
+
+}
+
+.submenuClass.active {
+    left: 0;
+}
+
+.mainvideoplayer {
+
+    background-color: beige;
+    width:100%;
+    min-height:100vh;
+    justify-content:100vh;
+
+}
+
+.mainvideoplayer h1 {
+    display:none;
+}
+
+a {
+    text-decoration: none;
+    color: #161616;
+    
+    
+}
+
+li {
+    list-style: none;
+    
+}
+
+ul{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding: 1rem;
+    
 }

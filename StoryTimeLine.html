@@ -12,19 +12,19 @@
 
         <title>tbd</title>
 
-        <link rel="stylesheet" type="text/css" href="visual.css">
+        <link rel="stylesheet" type="text/css" href="timelinevisual.css">
     </head>
 
     <body>
 
-        <h1>Story Timeline</h1>
-
         <header>
-            <section class="submenu">
+
+            <section class="subMenuClass" id="subMenuId">
             
-                <ul>
+                <ul class="submenuButtonsClass" id="submenuButtonsId">
                     <li><a href="/MainVideoPlayer.html">main_video_test</a></li>
-                    <li><a href="/StoryTimeLine.html">story_timeline_test</a></li>
+                    <li><button id="timelineLink">story_timeline_test</button></li>
+                    <li><a href="">Process</a></li>
                 </ul>
     
             </section>
@@ -35,25 +35,29 @@
 
             <h1>Interactive story timeline</h1>
             
-            <section class="sceneInfoSecClass" id="sceneInfoSecId">
+            <div class="splitFlexBox">
 
-                <button class="menu" id="menuButton">Menu</button>
+                <section class="sceneInfoSecClass" id="sceneInfoSecId">
 
-                <img src="/Untitled.jpg" alt="Picture of TV static. TEMPORARY">
+                    <button class="menu" id="menuButton">Menu</button>
 
-                <p class="selectTitleClass" id="selectTitleId">No scene selected</p>
-                
-                <p class="selectDescriptionClass" id="selectDescriptionId">Click a scene to start</p>
+                    <img src="/Untitled.jpg" alt="Picture of TV static. TEMPORARY">
 
-                <a class="sceneStartClass" id="sceneStartId" href="/MainVideoPlayer.html">Start from scene</a>
+                    <p class="selectTitleClass" id="selectTitleId">No scene selected</p>
+                    
+                    <p class="selectDescriptionClass" id="selectDescriptionId">Click a scene to start</p>
 
-            </section>
+                    <a class="sceneStartClass" id="sceneStartId" href="/MainVideoPlayer.html">Start from scene</a>
 
-            <section class="interacTimelineSecClass" id="interacTimelineSecId">
+                </section>
 
-                <p>temp holder</p>
+                <section class="interacTimelineSecClass" id="interacTimelineSecId">
 
-            </section>
+                    <p>temp holder</p>
+
+                </section>
+
+            </div>
 
         </main>
 

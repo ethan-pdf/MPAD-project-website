@@ -1,0 +1,58 @@
+body {
+
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #bdbdbd;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width:100%;
+
+}
+
+h1 {
+
+    display: none;
+
+}
+
+.splitFlexBox {
+
+    display: flex;
+    flex-direction:row;
+
+}
+
+.sceneInfoSecClass {
+
+    display: flex;
+    flex-direction:column;
+    background-color: green;
+
+}
+
+.interacTimelineSecClass {
+
+    display: flex;
+
+}
+
+.subMenuClass {
+
+    display:flex;
+    position: fixed; 
+    top: 0px; 
+    left: -165px; 
+    margin: 0px; 
+    background-color:azure;
+    height:100%;
+    transition: left 1s ease;
+
+}

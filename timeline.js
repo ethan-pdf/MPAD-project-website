@@ -1,5 +1,5 @@
 let menuButton = document.getElementById("menuButton"); // id for the menu button
-let videobutton = document.getElementById("videoPlayerLink"); // id for the button on the sub menu that leads to the video player
+let videobutton = document.getElementById("timelineLink"); // id for the button on the sub menu that leads to the video player
 let subMenu = document.getElementById("subMenuId"); // id for the sub menu itself
 let menu_open = 0
 

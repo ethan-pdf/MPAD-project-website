@@ -1,3 +1,10 @@
+html {
+
+    height:100%;
+    margin:0;
+
+}
+
 body {
 
     display: flex;
@@ -13,7 +20,6 @@ body {
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    width:100%;
 
 }
 
@@ -35,12 +41,16 @@ h1 {
     display: flex;
     flex-direction:column;
     background-color: green;
+    flex: 1 1 auto;
 
 }
 
 .interacTimelineSecClass {
 
     display: flex;
+    border-left-color: black;
+    border-left-style: solid;
+    flex: 1 1 auto;
 
 }
 
@@ -86,4 +96,34 @@ h1 {
     color: white;
     transition-duration: .5s;
     
+}
+
+.submenuButtonsId li {
+    list-style:none;
+}
+
+li {
+
+    list-style:none;
+    padding-bottom:1rem;
+    text-align:center;
+
+}
+
+ul {
+
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding: 1rem;
+    
+}
+
+.submenuButtonsClass a {
+
+    display:flex;
+    background-color: red;
+    text-decoration:none;
+    align-items:center;
+
 }

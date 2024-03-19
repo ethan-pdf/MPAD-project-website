@@ -96,11 +96,15 @@ a {
 }
 
 li {
+
     list-style: none;
+    padding-bottom:1rem;
+    text-align: center;
     
 }
 
 ul{
+
     display: flex;
     justify-content: start;
     flex-direction: column;

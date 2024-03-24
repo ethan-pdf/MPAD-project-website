@@ -19,3 +19,14 @@ function handleMenu(event) { // Handles the ability to open and close the sub me
         menu_open = 0
     }
 }
+
+
+window.addEventListener('click', handleClickOutside);
+
+
+function handleClickOutside(event) {
+    if (event.target !== menuButton && event.target !== subMenu && menu_open === 1) {
+        subMenu.classList.remove('active');
+        menu_open = 0
+    }
+}

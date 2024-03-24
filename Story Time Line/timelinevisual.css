@@ -9,8 +9,6 @@ body {
 
     display: flex;
     flex-direction:column;
-    justify-content:space-between;
-    align-items:center;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.6;
@@ -29,41 +27,58 @@ h1 {
 
 }
 
-.splitFlexBox {
-
-    display: flex;
-    flex-direction:row;
-
+a {
+    
+        text-decoration: none;
+    
+    
 }
 
-.sceneInfoSecClass {
-
-    display: flex;
-    flex-direction:column;
-    background-color: green;
-    flex: 1 1 auto;
-
-}
-
-.interacTimelineSecClass {
-
-    display: flex;
-    border-left-color: black;
-    border-left-style: solid;
-    flex: 1 1 auto;
-
-}
+/* CSS For header material ----------------------------------------------------------------------------------- */
 
 .subMenuClass {
 
     display:flex;
     position: fixed; 
     top: 0px; 
-    left: -165px; 
+    left: -200px; 
     margin: 0px; 
-    background-color:azure;
+    background-color:#333;
     height:100%;
     transition: left 1s ease;
+    width:200px;
+
+}
+
+.submenuButtonsClass a {
+
+    display:flex;
+    align-items:center;
+
+}
+
+.submenuButtonsClass button {
+
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    font: inherit;
+
+}
+
+.submenuButtonsClass a, button {
+
+    color:#bbb0b0;
+    transition: all .3s ease-in-out;
+    padding-left:1rem;
+
+}
+
+.submenuButtonsClass button:hover, a:hover {
+
+    color:white;
+    transition: all .3s ease-in-out;
 
 }
 
@@ -78,35 +93,35 @@ h1 {
     display: flex;
     justify-content: start;
     padding: 15px;
-    margin: 20px;
     background-color: #333;
     color: white;
-    border-radius: 3rem;
+    border-radius: 5rem;
     border: none;
     position: fixed; 
     top: 0; 
     left: 0; 
-    margin: 20px; 
+    margin: 20px;
 
 }
 
 .menu:hover {
 
     background-color: #161616;
-    color: white;
-    transition-duration: .5s;
+    transition:.5s;
     
 }
 
-.submenuButtonsId li {
-    list-style:none;
+.menu:active {
+
+    transform: scale(0.9);
+    transition: 0s;
+
 }
 
 li {
 
     list-style:none;
     padding-bottom:1rem;
-    text-align:center;
 
 }
 
@@ -119,11 +134,105 @@ ul {
     
 }
 
-.submenuButtonsClass a {
+/* CSS For splitFlexBox. The section that splits sceneInfoSecClass and timelineSecClass ----------------------*/
 
-    display:flex;
-    background-color: red;
-    text-decoration:none;
-    align-items:center;
+.splitFlexBox {
+
+    display: flex;
+    flex-direction:row;
+    
 
 }
+
+/* CSS For the timelineSecClass section. AKA The box with the timeline -------------------------------------- */
+
+.interacTimelineSecClass {
+
+    display: flex;
+    border-left-color: black;
+    background-color: whitesmoke;
+    border-left-style: solid;
+    flex: 2 auto;
+
+}
+
+/* CSS For sceneInfoSecClass section. AKA The box with the TV ----------------------------------------------- */
+
+
+.sceneInfoSecClass {
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+    flex: auto;
+    height: 100vh;
+
+}
+
+.sceneInfoSecClass img {
+    
+    width:80%;
+    margin-top:5vh;
+    border-radius:0.5rem;
+
+}
+
+.sceneStartClass {
+
+    display:flex;
+    justify-content: center;
+    background-color: #333;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    width:80%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    transition:.5s;
+
+}
+
+.sceneStartClass:hover {
+
+    background-color: #161616;
+    color: white;
+
+}
+
+.sceneStartClass:active {
+
+    transform: scale(0.97);
+    transition:0s;
+
+}
+
+.selectDescriptionClass {
+
+    background-color: whitesmoke;
+    display:flex;
+    width:79%;
+    height:15rem;
+    border: 3px solid #161616;
+    border-radius: 0.5rem;
+
+}
+
+.TVDisplayDiv { 
+
+    display:flex;
+    justify-content: center;   
+    flex-direction:column;
+    align-items: center;
+    width:100%;
+
+}
+
+.selectTitleClass {
+
+    display:flex;
+    width:80%;
+
+}
+
+
